@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form>
+      <fieldset>
+        <legend>Registration Form</legend>
+
+        <input type="hidden" name="userID" value="8808" />
+
+        <input type="text" value="Admin" disabled />
+        <br /><br />
+        <label for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter full name"
+          autofocus
+          required
+        />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          autocomplete="email"
+          required
+        />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        />
+        <br /><br />
+        <span>Gender</span>
+        <br />
+        <label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          Male
+        </label>
+        <label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          Female
+        </label>
+        <br /><br />
+        <span>Skills</span>
+        <br />
+        <label>
+          <input type="checkbox" id="html" name="skills" value="HTML" />
+          HTML
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" id="css" name="skills" value="CSS" />
+          CSS
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" id="js" name="skills" value="JavaScript" />
+          JavaScript
+        </label>
+        <br /><br />
+        <label for="country">Country</label>
+        <br />
+        <select id="country" name="country">
+          <option value="USA">USA</option>
+          <option value="Uzbekistan">Uzbekistan</option>
+        </select>
+        <br /><br />
+        <label for="residency">Residency</label>
+        <br />
+        <input
+          type="text"
+          id="residency"
+          name="residency"
+          value="New York City"
+          readonly
+        />
+        <br /><br />
+        <label for="about">About You</label>
+        <br />
+        <textarea
+          id="about"
+          name="about"
+          placeholder="Write about yourself"
+        ></textarea>
+        <br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
